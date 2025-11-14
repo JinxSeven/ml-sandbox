@@ -105,22 +105,7 @@ It usually appears in:
 Open `jupyter_notebook_config.py` and scroll to the bottom, then add:
 
 ```python
-c.NotebookApp.notebook_dir = '/path/to/workspace'
-c.NotebookApp.open_browser = True
-c.NotebookApp.port = 8888
-c.NotebookApp.allow_origin = '*'
-```
-
-If it’s Windows, use:
-
-```python
-c.NotebookApp.notebook_dir = r'C:\Users\MyName\ML_Workspace'
-```
-
-For Linux/Mac:
-
-```python
-c.NotebookApp.notebook_dir = '/home/myname/ML_Workspace'
+c.ServerApp.root_dir = '/path/to/workspace'
 ```
 
 ## Using the Environment
@@ -199,11 +184,3 @@ Flags often used:
 | Save notebook       | `Ctrl + S`                                                                |
 | Rename notebook     | `File → Rename`                                                           |
 | Export notebook     | `File → Download as → HTML/PDF/Script`                                    |
-
-
-## Quick Notes
-
-* Always activate the right environment before running Jupyter.
-* If the kernel doesn’t show up, reinstall `ipykernel` inside that env.
-* If `conda` isn’t recognized, open a new terminal or add it to PATH manually.
-* Good idea: back up `requirements.txt` for each project.
