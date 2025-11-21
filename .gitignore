@@ -1,4 +1,7 @@
+# ML environment
 .env
+
+# Jupyter notebook temp files (changes checkpoints)
 .ipynb_checkpoints
 
 # Use below folder to add large CSV files
