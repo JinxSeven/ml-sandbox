@@ -1,3 +1,5 @@
 .env
 .ipynb_checkpoints
+
+# Use below folder to add large CSV files
 large-data/
